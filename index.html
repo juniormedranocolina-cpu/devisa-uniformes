@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DEVISA | Uniformes San Gabriel</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            <span>DE</span>VISA
+            <small>Uniformes San Gabriel</small>
+        </div>
+
+        <nav id="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <button class="menu-btn" onclick="mostrarMenu()">☰</button>
+
+    </header>
+
+
+    <!-- ================= INICIO ================= -->
+
+    <section id="inicio" class="hero">
+
+        <div class="hero-text">
+
+            <p class="mini-titulo">UNIFORMES SAN GABRIEL</p>
+
+            <h1>
+                Tu uniforme,
+                <span>nuestro compromiso.</span>
+            </h1>
+
+            <p>
+                Encuentra uniformes escolares cómodos, de calidad
+                y pensados especialmente para los estudiantes
+                del Colegio San Gabriel.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#productos" class="btn principal">
+                    Ver productos
+                </a>
+
+                <a href="https://wa.me/573136363939"
+                   target="_blank"
+                   class="btn whatsapp">
+                    WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="uniforme-icon">
+                👕
+            </div>
+
+            <h3>DEVISA</h3>
+
+            <p>
+                Calidad y comodidad para
+                acompañarte todos los días.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTOS ================= -->
+
+    <section id="productos" class="productos">
+
+        <div class="section-title">
+
+            <p>CATÁLOGO</p>
+
+            <h2>Nuestros productos</h2>
+
+            <span>
+                Elige el uniforme que necesitas.
+            </span>
+
+        </div>
+
+
+        <div class="productos-grid">
+
+
+            <!-- PRODUCTO 1 -->
+
+            <article class="producto">
+
+                <div class="producto-img">
+                    <img src="img/camisa.jpg"
+                         alt="Camisa del uniforme San Gabriel"
+                         onerror="this.style.display='none'; this.parentElement.innerHTML='👕';">
+                </div>
+
+                <div class="producto-info">
+
+                    <span class="categoria">
+                        UNIFORME DIARIO
+                    </span>
+
+                    <h3>Camisa San Gabriel</h3>
+
+                    <p>
+                        Camisa escolar oficial, cómoda
+                        y perfecta para el uso diario.
+                    </p>
+
+                    <div class="producto-bottom">
+
+                        <strong>$45.000</strong>
+
+                        <button onclick="agregarCarrito('Camisa San Gabriel', 45000)">
+                            Agregar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCTO 2 -->
+
+            <article class="producto">
+
+                <div class="producto-img">
+                    <img src="img/pantalon.jpg"
+                         alt="Pantalón escolar San Gabriel"
+                         onerror="this.style.display='none'; this.parentElement.innerHTML='👖';">
+                </div>
+
+                <div class="producto-info">
+
+                    <span class="categoria">
+                        UNIFORME DIARIO
+                    </span>
+
+                    <h3>Pantalón escolar</h3>
+
+                    <p>
+                        Pantalón escolar diseñado para
+                        brindar comodidad durante la jornada.
+                    </p>
+
+                    <div class="producto-bottom">
+
+                        <strong>$55.000</strong>
+
+                        <button onclick="agregarCarrito('Pantalón escolar', 55000)">
+                            Agregar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCTO 3 -->
+
+            <article class="producto">
+
+                <div class="producto-img">
+                    <img src="img/falda.jpg"
+                         alt="Falda escolar San Gabriel"
+                         onerror="this.style.display='none'; this.parentElement.innerHTML='🩱';">
+                </div>
+
+                <div class="producto-info">
+
+                    <span class="categoria">
+                        UNIFORME DIARIO
+                    </span>
+
+                    <h3>Falda escolar</h3>
+
+                    <p>
+                        Falda escolar con diseño cómodo
+                        para las estudiantes.
+                    </p>
+
+                    <div class="producto-bottom">
+
+                        <strong>$50.000</strong>
+
+                        <button onclick="agregarCarrito('Falda escolar', 50000)">
+                            Agregar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCTO 4 -->
+
+            <article class="producto">
+
+                <div class="producto-img">
+                    <img src="img/sudadera.jpg"
+                         alt="Sudadera deportiva San Gabriel"
+                         onerror="this.style.display='none'; this.parentElement.innerHTML='👟';">
+                </div>
+
+                <div class="producto-info">
+
+                    <span class="categoria">
+                        EDUCACIÓN FÍSICA
+                    </span>
+
+                    <h3>Sudadera deportiva</h3>
+
+                    <p>
+                        Conjunto deportivo cómodo para
+                        las actividades físicas.
+                    </p>
+
+                    <div class="producto-bottom">
+
+                        <strong>$70.000</strong>
+
+                        <button onclick="agregarCarrito('Sudadera deportiva', 70000)">
+                            Agregar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PRODUCTO 5 -->
+
+            <article class="producto destacado">
+
+                <div class="producto-img">
+                    <img src="img/uniforme-completo.jpg"
+                         alt="Uniforme completo San Gabriel"
+                         onerror="this.style.display='none'; this.parentElement.innerHTML='🎒';">
+                </div>
+
+                <div class="producto-info">
+
+                    <span class="categoria">
+                        MÁS VENDIDO
+                    </span>
+
+                    <h3>Uniforme completo</h3>
+
+                    <p>
+                        Todo lo necesario para asistir
+                        al colegio con tu uniforme completo.
+                    </p>
+
+                    <div class="producto-bottom">
+
+                        <strong>$160.000</strong>
+
+                        <button onclick="agregarCarrito('Uniforme completo', 160000)">
+                            Agregar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= NOSOTROS ================= -->
+
+    <section id="nosotros" class="nosotros">
+
+        <div class="nosotros-text">
+
+            <p class="mini-titulo">SOBRE NOSOTROS</p>
+
+            <h2>
+                Conoce a <span>DEVISA</span>
+            </h2>
+
+            <p>
+                DEVISA es un emprendimiento desarrollado como
+                proyecto del SENA, enfocado en la comercialización
+                de uniformes escolares del Colegio San Gabriel.
+            </p>
+
+            <p>
+                Nuestro propósito es ofrecer a estudiantes y
+                familias una alternativa práctica para adquirir
+                sus uniformes, buscando siempre comodidad,
+                calidad y buena atención.
+            </p>
+
+        </div>
+
+
+        <div class="valores">
+
+            <div class="valor">
+                <span>✓</span>
+                <h3>Calidad</h3>
+                <p>Productos pensados para el uso escolar.</p>
+            </div>
+
+            <div class="valor">
+                <span>✓</span>
+                <h3>Comodidad</h3>
+                <p>Diseños adecuados para la jornada escolar.</p>
+            </div>
+
+            <div class="valor">
+                <span>✓</span>
+                <h3>Atención</h3>
+                <p>Estamos disponibles para ayudarte.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACTO ================= -->
+
+    <section id="contacto" class="contacto">
+
+        <div class="section-title">
+
+            <p>CONTÁCTANOS</p>
+
+            <h2>¿Necesitas un uniforme?</h2>
+
+            <span>
+                Escríbenos y te ayudaremos con tu pedido.
+            </span>
+
+        </div>
+
+
+        <div class="contacto-card">
+
+            <div class="contacto-item">
+                <div class="contacto-icon">📱</div>
+
+                <div>
+                    <h3>WhatsApp</h3>
+                    <p>+57 313 636 3939</p>
+                </div>
+            </div>
+
+
+            <a href="https://wa.me/573136363939"
+               target="_blank"
+               class="btn whatsapp grande">
+
+                Escribir por WhatsApp
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CARRITO ================= -->
+
+    <div id="carrito" class="carrito">
+
+        <div class="carrito-header">
+
+            <h2>🛒 Mi pedido</h2>
+
+            <button onclick="cerrarCarrito()">✕</button>
+
+        </div>
+
+        <div id="listaCarrito"></div>
+
+        <div class="total">
+
+            <span>Total:</span>
+
+            <strong id="total">$0</strong>
+
+        </div>
+
+        <button onclick="enviarPedido()" class="btn whatsapp pedido">
+            Pedir por WhatsApp
+        </button>
+
+    </div>
+
+
+    <!-- BOTÓN DEL CARRITO -->
+
+    <button class="carrito-btn" onclick="abrirCarrito()">
+        🛒
+        <span id="contador">0</span>
+    </button>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            DEVISA
+        </div>
+
+        <p>
+            Uniformes San Gabriel
+        </p>
+
+        <p class="sena">
+            Proyecto SENA
+        </p>
+
+        <div class="footer-line"></div>
+
+        <p>
+            © 2026 DEVISA. Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
